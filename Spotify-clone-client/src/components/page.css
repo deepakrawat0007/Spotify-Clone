@@ -1,0 +1,139 @@
+/*  Header Style  */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    padding-left: 3%;
+    color: white;
+    font-size: 1.7em;
+    font-weight: 600;
+    background-color: black;
+}
+
+/* Login Style */
+
+.cont {
+    background-color: rgba(0, 0, 0, 0.9);
+    background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgb(0, 0, 0) 100%);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.cont form {
+    border-radius: 10px;
+    background-color: black;
+    width: 45vw;
+    height: auto;
+    padding: 5%;
+    text-align: center;
+    color: white
+}
+
+.cont h1 {
+    font-size: 3em;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+    margin: 0;
+    padding: 0;
+}
+
+.btns,
+.inputs {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(41, 41, 41);
+}
+
+.btns button {
+    width: 30vw;
+    height: 7vh;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 500px;
+    color: white;
+    font-size: 1.3em;
+}
+
+.btns button:hover {
+    border: 4px solid whitesmoke;
+    cursor: pointer;
+}
+
+.btns button:nth-of-type(4) {
+    margin-bottom: 7%;
+}
+
+.inputs input {
+    outline-offset: 0;
+    outline-style: none;
+    padding-left: 5%;
+    font-size: 1.1em;
+    width: 23vw;
+    height: 6vh;
+    appearance: none;
+    border: 1px solid whitesmoke;
+    color: white;
+    background-color: rgb(21, 21, 21);
+}
+
+.inputs label {
+    font-weight: 600;
+    position: relative;
+    right: 17%;
+}
+
+.inputs label:nth-of-type(2) {
+    right: 22.5%;
+}
+
+.inputs input:hover {
+    border: 1px solid white;
+}
+
+#log {
+    width: 25vw;
+    height: 7vh;
+    border: 1px solid #1ed760;
+    border-radius: 100px;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 3%;
+    background-color: #1ed760;
+}
+
+#log:hover {
+    border: 4px solid white;
+    cursor: pointer;
+}
+
+.inputs p {
+    text-decoration: underline;
+}
+
+.inputs p:hover {
+    color: #1ed760;
+    cursor: pointer;
+}
+
+.last p {
+    margin-top: 8%;
+}
+
+.last p span:hover {
+    cursor: pointer;
+    color: #1ed760;
+    text-decoration: underline;
+}
