@@ -2,9 +2,14 @@
 body {
     margin: 0;
     padding: 0;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgb(0, 0, 0) 100%); */
     font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
 }
 
+button span{
+    margin-right: 10px;
+}
 .head {
     display: flex;
     align-items: center;
@@ -50,6 +55,7 @@ body {
     margin-top: 7%;
     display: flex;
     flex-direction: column;
+
     gap: 1.1em;
     align-items: center;
     justify-content: center;
@@ -71,16 +77,16 @@ body {
     cursor: pointer;
 }
 
-.btns button:nth-of-type(4) {
+.btns button:nth-of-type(4) , .btns #lastbtn{
     margin-bottom: 7%;
 }
 
-.inputs input {
+.inputs input[type="text"] , input[type="email"], input[type="password"] , input[type="date"] {
     outline-offset: 0;
     outline-style: none;
     padding-left: 5%;
     font-size: 1.1em;
-    width: 23vw;
+    width: 21vw;
     height: 6vh;
     appearance: none;
     border: 1px solid whitesmoke;
@@ -88,7 +94,11 @@ body {
     background-color: rgb(21, 21, 21);
 }
 
-.inputs label {
+.inputs input[type="checkbox"]{
+    accent-color: #1ed760;
+}
+
+/* .inputs label {
     font-weight: 600;
     position: relative;
     right: 17%;
@@ -96,6 +106,15 @@ body {
 
 .inputs label:nth-of-type(2) {
     right: 22.5%;
+} */
+.field {
+    text-align: left;
+}
+.field label{
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    display: block;
 }
 
 .inputs input:hover {
@@ -134,6 +153,23 @@ body {
 
 .last p span:hover {
     cursor: pointer;
+    color: #1ed760;
+    text-decoration: underline;
+}
+
+/* Registration */
+
+.policy p{
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.policy p:hover{
+    color: white;
+}
+
+.policy p span{
     color: #1ed760;
     text-decoration: underline;
 }

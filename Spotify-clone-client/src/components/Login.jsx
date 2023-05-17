@@ -23,16 +23,21 @@ const Login = () => {
                 <form>
                     <h1>Log in to Spotify</h1>
                     <div className="btns">
-                        <button>Continue with Google</button>
-                        <button>Continue with Facebook</button>
-                        <button>Continue with Apple</button>
+                        <button><span><i class="fa-brands fa-google"></i></span>Continue with Google</button>
+                        <button><span><i class="fa-brands fa-facebook"></i></span>Continue with Facebook</button>
+                        <button><span><i class="fa-brands fa-apple"></i></span>Continue with Apple</button>
                         <button>Continue with Mobile Number</button>
                     </div>
                     <div className="inputs">
+                        <div className="field">
                         <label htmlFor="email">Email or Username</label>
-                        <input id="email" placeholder="Email or Username" />
+                        <input type="email" id="email" placeholder="Email or Username" />
+                        </div>
+                        <div className="field">
                         <label htmlFor="password">Password</label>
-                        <input id="password" placeholder="Password" />
+                        <input type="password" id="password" placeholder="Password" />
+                        </div>
+                        
                         <button id="log">Log in</button>
                         <p>Forgot your password?</p>
                     </div>
